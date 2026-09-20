@@ -1,0 +1,106 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum Role {
+  CITIZEN
+  STAFF
+  ADMIN
+}
+
+enum Category {
+  ELECTRICAL
+  PLUMBING
+  HVAC
+  NETWORK
+  CARPENTRY
+  JANITORIAL
+  OTHER
+}
+
+enum Priority {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+enum TicketStatus {
+  REPORTED
+  ASSIGNED
+  IN_PROGRESS
+  RESOLVED
+  CLOSED
+}
+
+model User {
+  id              String          @id @default(cuid())
+  name            String
+  email           String          @unique
+  role            Role            @default(CITIZEN)
+  department      String          @default("General")
+  phone           String?
+  ticketsReported Ticket[]        @relation("ReportedBy")
+  ticketsAssigned Ticket[]        @relation("AssignedTo")
+  comments        TicketComment[]
+  historyEntries  TicketHistory[]
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+model Ticket {
+  id                 String          @id @default(cuid())
+  ticketCode         String          @unique
+  title              String
+  description        String
+  category           Category        @default(OTHER)
+  priority           Priority        @default(MEDIUM)
+  status             TicketStatus    @default(REPORTED)
+  building           String
+  floor              String
+  room               String
+  photoUrl           String?
+  resolutionProofUrl String?
+  reportedById       String
+  reportedBy         User            @relation("ReportedBy", fields: [reportedById], references: [id])
+  assignedToId       String?
+  assignedTo         User?           @relation("AssignedTo", fields: [assignedToId], references: [id])
+  slaDeadline        DateTime
+  resolvedAt         DateTime?
+  rating             Int?
+  feedback           String?
+  createdAt          DateTime        @default(now())
+  updatedAt          DateTime        @updatedAt
+  history            TicketHistory[]
+  comments           TicketComment[]
+}
+
+model TicketHistory {
+  id          String   @id @default(cuid())
+  ticketId    String
+  ticket      Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  action      String
+  fromStatus  String?
+  toStatus    String?
+  changedById String
+  changedBy   User     @relation(fields: [changedById], references: [id])
+  note        String?
+  timestamp   DateTime @default(now())
+}
+
+model TicketComment {
+  id         String   @id @default(cuid())
+  ticketId   String
+  ticket     Ticket   @relation(fields: [ticketId], references: [id], onDelete: Cascade)
+  authorId   String
+  author     User     @relation(fields: [authorId], references: [id])
+  message    String
+  isInternal Boolean  @default(false)
+  createdAt  DateTime @default(now())
+}
