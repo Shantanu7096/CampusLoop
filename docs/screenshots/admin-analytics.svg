@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgAdmin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" rx="16" fill="url(#bgAdmin)"/>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="60" rx="12" fill="#ffffff" opacity="0.95"/>
+  <circle cx="70" cy="60" r="14" fill="#d97706"/>
+  <text x="95" y="66" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#0f172a">FixFlow</text>
+  <rect x="190" y="47" width="160" height="26" rx="13" fill="#fef3c7"/>
+  <text x="205" y="64" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#d97706">Admin Command Center</text>
+
+  <!-- KPI Cards Grid -->
+  <!-- Card 1: Total -->
+  <rect x="40" y="110" width="260" height="110" rx="14" fill="#ffffff"/>
+  <text x="65" y="140" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748b">TOTAL TICKETS</text>
+  <text x="65" y="180" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#0f172a">24</text>
+  <text x="65" y="202" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#4f46e5">14 active in pipe</text>
+
+  <!-- Card 2: SLA Breach -->
+  <rect x="325" y="110" width="260" height="110" rx="14" fill="#ffffff"/>
+  <text x="350" y="140" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#dc2626">SLA BREACH RATE</text>
+  <text x="350" y="180" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#dc2626">4.2%</text>
+  <text x="350" y="202" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#dc2626">1 Breached • 2 Nearing limit</text>
+
+  <!-- Card 3: ART -->
+  <rect x="610" y="110" width="260" height="110" rx="14" fill="#ffffff"/>
+  <text x="635" y="140" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#059669">AVG RESOLUTION TIME (ART)</text>
+  <text x="635" y="180" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#059669">2.4h</text>
+  <text x="635" y="202" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#64748b">Target benchmark &lt; 12.0h</text>
+
+  <!-- Card 4: Critical -->
+  <rect x="895" y="110" width="265" height="110" rx="14" fill="#ffffff"/>
+  <text x="920" y="140" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#d97706">CRITICAL ACTIVE</text>
+  <text x="920" y="180" font-family="system-ui, sans-serif" font-weight="900" font-size="36" fill="#d97706">2</text>
+  <text x="920" y="202" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#d97706">High priority response</text>
+
+  <!-- Category Gauge Charts -->
+  <rect x="40" y="240" width="545" height="170" rx="14" fill="#ffffff"/>
+  <text x="65" y="270" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#0f172a">ISSUES BY CATEGORY BREAKDOWN</text>
+
+  <text x="65" y="300" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#334155">Electrical</text>
+  <rect x="160" y="290" width="390" height="12" rx="6" fill="#f1f5f9"/>
+  <rect x="160" y="290" width="310" height="12" rx="6" fill="#4f46e5"/>
+
+  <text x="65" y="335" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#334155">HVAC</text>
+  <rect x="160" y="325" width="390" height="12" rx="6" fill="#f1f5f9"/>
+  <rect x="160" y="325" width="240" height="12" rx="6" fill="#4f46e5"/>
+
+  <text x="65" y="370" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#334155">Plumbing</text>
+  <rect x="160" y="360" width="390" height="12" rx="6" fill="#f1f5f9"/>
+  <rect x="160" y="360" width="180" height="12" rx="6" fill="#4f46e5"/>
+
+  <!-- Dispatch Table -->
+  <rect x="610" y="240" width="550" height="395" rx="14" fill="#ffffff"/>
+  <text x="635" y="270" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#0f172a">CENTRAL DISPATCH &amp; RE-ASSIGNMENT BOARD</text>
+
+  <!-- Table Header -->
+  <rect x="635" y="290" width="500" height="30" rx="6" fill="#f8fafc"/>
+  <text x="645" y="310" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">CODE</text>
+  <text x="730" y="310" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">ISSUE</text>
+  <text x="890" y="310" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">PRIORITY</text>
+  <text x="980" y="310" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#64748b">DISPATCH</text>
+
+  <!-- Row 1 -->
+  <text x="645" y="345" font-family="monospace" font-weight="800" font-size="12" fill="#4f46e5">FF-1001</text>
+  <text x="730" y="345" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#0f172a">Chiller Failure</text>
+  <rect x="890" y="330" width="70" height="20" rx="10" fill="#fee2e2"/>
+  <text x="900" y="344" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#dc2626">CRITICAL</text>
+  <rect x="980" y="330" width="80" height="22" rx="6" fill="#4f46e5"/>
+  <text x="993" y="345" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#ffffff">Reassign</text>
+
+  <!-- Row 2 -->
+  <text x="645" y="385" font-family="monospace" font-weight="800" font-size="12" fill="#4f46e5">FF-1002</text>
+  <text x="730" y="385" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#0f172a">Breaker Tripped</text>
+  <rect x="890" y="370" width="70" height="20" rx="10" fill="#fee2e2"/>
+  <text x="900" y="384" font-family="system-ui, sans-serif" font-weight="700" font-size="10" fill="#dc2626">CRITICAL</text>
+  <rect x="980" y="370" width="80" height="22" rx="6" fill="#d97706"/>
+  <text x="997" y="385" font-family="system-ui, sans-serif" font-weight="700" font-size="11" fill="#ffffff">Dispatch</text>
+
+  <!-- CSV Export Button -->
+  <rect x="40" y="585" width="220" height="50" rx="10" fill="#0f172a"/>
+  <text x="70" y="615" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#ffffff">📥 Export Audit CSV</text>
+</svg>

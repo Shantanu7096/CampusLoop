@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Frame -->
+  <rect width="1200" height="675" rx="16" fill="url(#bg)"/>
+  
+  <!-- Header Bar -->
+  <rect x="40" y="30" width="1120" height="60" rx="12" fill="#ffffff" opacity="0.95"/>
+  <circle cx="70" cy="60" r="14" fill="#4f46e5"/>
+  <text x="95" y="66" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#0f172a">FixFlow</text>
+  <rect x="190" y="47" width="120" height="26" rx="13" fill="#e0e7ff"/>
+  <text x="205" y="64" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#4338ca">Citizen Portal</text>
+  
+  <!-- Role Tabs -->
+  <rect x="850" y="43" width="280" height="34" rx="8" fill="#f1f5f9"/>
+  <rect x="853" y="46" width="90" height="28" rx="6" fill="#ffffff"/>
+  <text x="868" y="64" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#4f46e5">Citizen</text>
+  <text x="960" y="64" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Staff</text>
+  <text x="1050" y="64" font-family="system-ui, sans-serif" font-weight="600" font-size="12" fill="#64748b">Admin</text>
+
+  <!-- Banner -->
+  <rect x="40" y="110" width="1120" height="110" rx="16" fill="#1e1b4b" stroke="#4338ca" stroke-width="1.5"/>
+  <text x="70" y="150" font-family="system-ui, sans-serif" font-weight="800" font-size="24" fill="#ffffff">Report &amp; Track Campus Facilities Issues</text>
+  <text x="70" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#c7d2fe">Guaranteed SLA resolution tracking with automated priority response timers.</text>
+  <rect x="940" y="140" width="180" height="46" rx="10" fill="url(#btn)"/>
+  <text x="965" y="168" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#ffffff">+ Report New Issue</text>
+
+  <!-- Ticket Card 1 -->
+  <rect x="40" y="240" width="1120" height="395" rx="16" fill="url(#cardBg)" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Ticket Code & Badges -->
+  <rect x="70" y="270" width="90" height="28" rx="6" fill="#e0e7ff"/>
+  <text x="88" y="289" font-family="monospace" font-weight="800" font-size="14" fill="#4338ca">FF-1001</text>
+
+  <rect x="170" y="270" width="90" height="28" rx="14" fill="#fee2e2"/>
+  <text x="185" y="289" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#dc2626">CRITICAL</text>
+
+  <rect x="270" y="270" width="70" height="28" rx="6" fill="#f1f5f9"/>
+  <text x="286" y="289" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#475569">HVAC</text>
+
+  <rect x="350" y="270" width="180" height="28" rx="14" fill="#fef3c7"/>
+  <text x="368" y="289" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#d97706">⏱ 4h 00m SLA Target</text>
+
+  <text x="70" y="335" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#0f172a">Main HVAC Chiller Failure - Science Block B</text>
+  <text x="70" y="365" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Chiller unit #3 high pressure trip. Temperature in chemistry laboratories exceeding safe limits (28°C).</text>
+
+  <!-- Stepper Pipeline Header -->
+  <text x="70" y="430" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#64748b" letter-spacing="1">AUDIT LIFECYCLE STEPPER PIPELINE</text>
+
+  <!-- Stepper Line -->
+  <line x1="120" y1="480" x2="1040" y2="480" stroke="#cbd5e1" stroke-width="4"/>
+  <line x1="120" y1="480" x2="580" y2="480" stroke="#4f46e5" stroke-width="4"/>
+
+  <!-- Step 1: Reported -->
+  <circle cx="120" cy="480" r="18" fill="#4f46e5"/>
+  <text x="115" y="485" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#ffffff">✓</text>
+  <text x="92" y="520" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0f172a">Reported</text>
+
+  <!-- Step 2: Assigned -->
+  <circle cx="350" cy="480" r="18" fill="#4f46e5"/>
+  <text x="345" y="485" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#ffffff">✓</text>
+  <text x="325" y="520" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#0f172a">Assigned</text>
+
+  <!-- Step 3: In Progress -->
+  <circle cx="580" cy="480" r="22" fill="#4f46e5" stroke="#c7d2fe" stroke-width="6"/>
+  <text x="575" y="485" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#ffffff">3</text>
+  <text x="546" y="520" font-family="system-ui, sans-serif" font-weight="800" font-size="13" fill="#4f46e5">In Progress</text>
+
+  <!-- Step 4: Resolved -->
+  <circle cx="810" cy="480" r="18" fill="#e2e8f0"/>
+  <text x="805" y="485" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#64748b">4</text>
+  <text x="785" y="520" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#64748b">Resolved</text>
+
+  <!-- Step 5: Closed -->
+  <circle cx="1040" cy="480" r="18" fill="#e2e8f0"/>
+  <text x="1035" y="485" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#64748b">5</text>
+  <text x="1020" y="520" font-family="system-ui, sans-serif" font-weight="600" font-size="13" fill="#64748b">Closed</text>
+</svg>

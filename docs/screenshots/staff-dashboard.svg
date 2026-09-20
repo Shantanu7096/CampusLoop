@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgStaff" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="50%" stop-color="#022c22"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cardStaff" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" rx="16" fill="url(#bgStaff)"/>
+
+  <!-- Header -->
+  <rect x="40" y="30" width="1120" height="60" rx="12" fill="#ffffff" opacity="0.95"/>
+  <circle cx="70" cy="60" r="14" fill="#059669"/>
+  <text x="95" y="66" font-family="system-ui, sans-serif" font-weight="800" font-size="22" fill="#0f172a">FixFlow</text>
+  <rect x="190" y="47" width="140" height="26" rx="13" fill="#d1fae5"/>
+  <text x="205" y="64" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#047857">Staff Mobile View</text>
+
+  <!-- Banner -->
+  <rect x="40" y="110" width="1120" height="100" rx="16" fill="#064e3b" stroke="#059669" stroke-width="1.5"/>
+  <text x="70" y="150" font-family="system-ui, sans-serif" font-weight="800" font-size="24" fill="#ffffff">Maintenance Field Technician Dispatch</text>
+  <text x="70" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#a7f3d0">Technician: Marcus Vance • Dept: Electrical</text>
+  
+  <rect x="940" y="130" width="80" height="60" rx="10" fill="#022c22"/>
+  <text x="965" y="152" font-family="system-ui, sans-serif" font-weight="600" font-size="10" fill="#a7f3d0">ACTIVE</text>
+  <text x="972" y="177" font-family="system-ui, sans-serif" font-weight="900" font-size="20" fill="#ffffff">3</text>
+
+  <rect x="1035" y="130" width="85" height="60" rx="10" fill="#022c22"/>
+  <text x="1052" y="152" font-family="system-ui, sans-serif" font-weight="600" font-size="10" fill="#a7f3d0">NEW QUEUE</text>
+  <text x="1070" y="177" font-family="system-ui, sans-serif" font-weight="900" font-size="20" fill="#fcd34d">2</text>
+
+  <!-- Work Card -->
+  <rect x="40" y="230" width="1120" height="400" rx="16" fill="url(#cardStaff)" stroke="#e2e8f0" stroke-width="2"/>
+
+  <rect x="70" y="260" width="90" height="28" rx="6" fill="#d1fae5"/>
+  <text x="88" y="279" font-family="monospace" font-weight="800" font-size="14" fill="#047857">FF-1004</text>
+
+  <rect x="170" y="260" width="90" height="28" rx="14" fill="#fef3c7"/>
+  <text x="195" y="279" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#d97706">HIGH</text>
+
+  <rect x="270" y="260" width="90" height="28" rx="6" fill="#f1f5f9"/>
+  <text x="282" y="279" font-family="system-ui, sans-serif" font-weight="700" font-size="12" fill="#475569">NETWORK</text>
+
+  <!-- Action buttons -->
+  <rect x="800" y="255" width="160" height="40" rx="10" fill="#059669"/>
+  <text x="830" y="280" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#ffffff">✓ Mark Resolved</text>
+
+  <rect x="975" y="255" width="150" height="40" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="1005" y="280" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#334155">📄 View Logs</text>
+
+  <text x="70" y="325" font-family="system-ui, sans-serif" font-weight="800" font-size="20" fill="#0f172a">Core Switch Fiber Link Intermittent Drops</text>
+  <text x="70" y="355" font-family="system-ui, sans-serif" font-size="14" fill="#475569">Network rack in Engineering Building experiencing 45% packet loss on uplink fiber SFP+ module.</text>
+
+  <!-- Location details block -->
+  <rect x="70" y="380" width="1055" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="90" y="407" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#047857">📍 Location: Engineering Complex • Floor 2 • Comm Closet 208</text>
+
+  <!-- Resolution Photo Proof Upload Prompt -->
+  <rect x="70" y="445" width="1055" height="160" rx="12" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1.5"/>
+  <text x="90" y="475" font-family="system-ui, sans-serif" font-weight="800" font-size="14" fill="#065f46">📷 MANDATORY RESOLUTION PROOF PHOTO UPLOAD</text>
+  <text x="90" y="500" font-family="system-ui, sans-serif" font-size="13" fill="#047857">Business rule requires verified technician photo evidence before status can transition to RESOLVED.</text>
+
+  <rect x="90" y="520" width="200" height="65" rx="8" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+  <text x="110" y="557" font-family="system-ui, sans-serif" font-weight="700" font-size="13" fill="#047857">📷 Attached_Proof_Fix.jpg</text>
+
+  <rect x="310" y="520" width="815" height="65" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="330" y="557" font-family="system-ui, sans-serif" font-size="13" fill="#64748b">Replaced faulty SFP+ module and tested fiber signal strength (-3dBm optimal)...</text>
+</svg>
